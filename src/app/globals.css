@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrap-scrollbar::-webkit-scrollbar {
+	@apply w-[6px] h-[0px] md:block hidden;
+}
+
+.wrap-scrollbar::-webkit-scrollbar-track {
+	@apply bg-slate-100;
+}
+
+.wrap-scrollbar::-webkit-scrollbar-thumb {
+	@apply bg-slate-600 rounded-[10px] cursor-pointer;
+}
+
+.noscrollbar-ui::-webkit-scrollbar {
+	display: none;
+}
