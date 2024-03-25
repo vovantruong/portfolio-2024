@@ -15,14 +15,14 @@ const itemsWork = [
         image: '/share-truyen-hay-nextjs.png',
         link: 'https://truyenhay.vercel.app/',
     },
-    {
-        id: 2,
-        color: 'from-blue-300 to-violet-300',
-        title: 'Next.js Comics website',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam voluptate excepturi numquam soluta esse incidunt expedita modi nihil nemo, cum dicta sapiente! Impedit sapiente accusantium corporis nulla et inventore?',
-        image: '/share-truyen-hay-nextjs.png',
-        link: 'https://truyenhay.vercel.app/',
-    },
+    // {
+    //     id: 2,
+    //     color: 'from-blue-300 to-violet-300',
+    //     title: 'Next.js Comics website',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam voluptate excepturi numquam soluta esse incidunt expedita modi nihil nemo, cum dicta sapiente! Impedit sapiente accusantium corporis nulla et inventore?',
+    //     image: '/share-truyen-hay-nextjs.png',
+    //     link: 'https://truyenhay.vercel.app/',
+    // },
     // {
     //     id: 3,
     //     color: 'from-violet-300 to-purple-300',
@@ -67,7 +67,8 @@ const PortfolioPage = () => {
             animate={{ y: "0%" }}
             transition={{ duration: 1 }}
         >
-            <div className='h-[600vh] relative' ref={ref}>
+            <div className='h-[200vh] relative' ref={ref}>
+                {/* <div className='h-[600vh] relative' ref={ref}> Khi */}
                 <div className='relative w-full h-[calc(100vh-6rem)] flex items-center justify-center '>
                     <h1>
                         <TextAnimate text='My World' className="text-8xl text-center font font-bold" />
@@ -98,7 +99,28 @@ const PortfolioPage = () => {
                     </div>}
                 </div>
                 <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
-                    <motion.div
+                    {itemsWork.map(item => (
+                        <div
+                            key={item.id}
+                            className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                        >
+                            <div className='flex flex-col gap-8 text-white container mx-auto px-6'>
+                                <h2 className='font-bold text-2xl md:text-4xl lg:text-6xl'>{item.title}</h2>
+                                <div className='flex md:flex-row flex-col'>
+                                    <div className='relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] shadow-md rounded-md overflow-hidden'>
+                                        <Image src={item.image} alt={item.title} fill />
+                                    </div>
+                                    <div className='flex-1 md:pl-10 md:mt-0 mt-10'>
+                                        <p className='lg:text-lg'>{item.desc}</p>
+                                        <Link href={item.link} target='_blank' className='flex justify-start'>
+                                            <span className='p-2 text-sm md:p-4 md:text-md lg:text-xl bg-white text-gray-600 font-semibold my-4 rounded'>See more</span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                    {/* <motion.div
                         className="flex "
                         style={{ x }}
                     >
@@ -124,7 +146,7 @@ const PortfolioPage = () => {
                                 </div>
                             </div>
                         ))}
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
             <div className='w-screen h-screen flex flex-col gap-16 items-center justify-center text-center'>
