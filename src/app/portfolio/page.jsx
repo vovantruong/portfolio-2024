@@ -67,8 +67,8 @@ const PortfolioPage = () => {
             animate={{ y: "0%" }}
             transition={{ duration: 1 }}
         >
-            <div className='h-[200vh] relative' ref={ref}>
-                {/* <div className='h-[600vh] relative' ref={ref}> Khi */}
+            <div className='h-[300vh] relative' ref={ref}>
+                {/* <div className='h-[600vh] relative' ref={ref}> */}
                 <div className='relative w-full h-[calc(100vh-6rem)] flex items-center justify-center '>
                     <h1>
                         <TextAnimate text='My World' className="text-8xl text-center font font-bold" />
