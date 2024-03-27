@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+	display: none;
+}
+
 .wrap-scrollbar::-webkit-scrollbar {
 	@apply w-[6px] h-[0px] md:block hidden;
 }

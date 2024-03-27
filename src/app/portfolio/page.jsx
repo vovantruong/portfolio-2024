@@ -11,7 +11,7 @@ const itemsWork = [
         id: 1,
         color: 'from-red-300 to-blue-300',
         title: 'Next.js Comics website',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam voluptate excepturi numquam soluta esse incidunt expedita modi nihil nemo, cum dicta sapiente! Impedit sapiente accusantium corporis nulla et inventore?',
+        desc: 'I really like reading stories and I thought I should create a website to express my interests and this website was born. It is a combination of popular web programming languages such as nextjs, tailwindcss, etc.',
         image: '/share-truyen-hay-nextjs.png',
         link: 'https://truyenhay.vercel.app/',
     },
@@ -68,7 +68,6 @@ const PortfolioPage = () => {
             transition={{ duration: 1 }}
         >
             <div className='h-[300vh] relative' ref={ref}>
-                {/* <div className='h-[600vh] relative' ref={ref}> */}
                 <div className='relative w-full h-[calc(100vh-6rem)] flex items-center justify-center '>
                     <h1>
                         <TextAnimate text='My World' className="text-8xl text-center font font-bold" />
@@ -113,7 +112,7 @@ const PortfolioPage = () => {
                                     <div className='flex-1 md:pl-10 md:mt-0 mt-10'>
                                         <p className='lg:text-lg'>{item.desc}</p>
                                         <Link href={item.link} target='_blank' className='flex justify-start'>
-                                            <span className='p-2 text-sm md:p-4 md:text-md lg:text-xl bg-white text-gray-600 font-semibold my-4 rounded'>See more</span>
+                                            <span className='p-2 text-sm md:p-4 md:text-md lg:text-xl bg-white text-gray-600 font-semibold my-4 rounded'>Visit website</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -164,7 +163,7 @@ const PortfolioPage = () => {
                         </text>
                     </motion.svg>
                     <Link
-                        href="/about"
+                        href="/contact"
                         className='w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center'
                     >
                         Hire me
