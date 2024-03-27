@@ -179,7 +179,7 @@ const AboutPage = () => {
                                                     </div>
                                                     <div className='flex flex-wrap gap-2 md:px-3 py-3'>
                                                         {item.tech.map((x) => (
-                                                            <span className='bg-black text-white rounded px-2 py-1 text-xs font-light'>{x}</span>
+                                                            <span key={x} className='bg-black text-white rounded px-2 py-1 text-xs font-light'>{x}</span>
                                                         ))}
                                                     </div>
                                                     {/* TIMELINE */}
@@ -215,7 +215,7 @@ const AboutPage = () => {
                                                     </div>
                                                     <div className='flex flex-wrap gap-2 md:px-3 py-3'>
                                                         {item.tech.map((x) => (
-                                                            <span className='bg-black text-white rounded px-2 py-1 text-xs font-light'>{x}</span>
+                                                            <span key={x} className='bg-black text-white rounded px-2 py-1 text-xs font-light'>{x}</span>
                                                         ))}
                                                     </div>
                                                     {/* TIMELINE */}
