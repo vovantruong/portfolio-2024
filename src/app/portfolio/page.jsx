@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import TextAnimate from '@/components/customs/TextAnimate'
+import ShareTruyenHay from '../../../public/share-truyen-hay-nextjs.png'
 
 const itemsWork = [
     {
@@ -12,7 +13,7 @@ const itemsWork = [
         color: 'from-red-300 to-blue-300',
         title: 'Next.js Comics website',
         desc: 'I really like reading stories and I thought I should create a website to express my interests and this website was born. It is a combination of popular web programming languages such as nextjs, tailwindcss, etc.',
-        image: '/share-truyen-hay-nextjs.png',
+        image: ShareTruyenHay,
         link: 'https://truyenhay.vercel.app/',
     },
     // {

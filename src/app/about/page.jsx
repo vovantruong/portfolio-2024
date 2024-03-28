@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import { motion, useInView, useScroll } from 'framer-motion'
 import Brain from '@/components/customs/Brain'
 import Image from 'next/image'
+import LogoGavin from '../../../public/logo-gavin.png'
 
 const itemsSkill = [
     "Javascript", "HTML5", "CSS3", "SCSS", "SASS", "Tailwindcss", "React.js", "Next.js", "Typescript", "Wordpress", "Responsive Web"
@@ -58,7 +59,7 @@ const AboutPage = () => {
                     {/* BIOGRAPHY */}
                     <div className="flex flex-col gap-10 justify-center relative">
                         <h1 className='font-bold md:text-3xl text-2xl uppercase flex items-center'>
-                            <Image src="/logo-gavin.png" alt='logo' width={35} height={35} className='mr-2' />
+                            <Image src={LogoGavin} alt='logo' width={35} height={35} className='mr-2' />
                             Biography
                         </h1>
                         <p className='text-base'>
@@ -110,7 +111,7 @@ const AboutPage = () => {
                             animate={isSkillRefInView ? { x: 0 } : {}}
                             transition={{ delay: 0.2 }}
                         >
-                            <Image src="/logo-gavin.png" alt='logo' width={35} height={35} className='mr-2' />
+                            <Image src={LogoGavin} alt='logo' width={35} height={35} className='mr-2' />
                             SKILLS
                         </motion.h1>
                         <div className='flex gap-4 flex-wrap'>
@@ -151,7 +152,7 @@ const AboutPage = () => {
                             animate={isExperienceRefInView ? { x: "0" } : {}}
                             transition={{ delay: 0.2 }}
                         >
-                            <Image src="/logo-gavin.png" alt='logo' width={35} height={35} className='mr-2' />
+                            <Image src={LogoGavin} alt='logo' width={35} height={35} className='mr-2' />
                             EXPERIENCE
                         </motion.h1>
                         {/* EXPERIENCE LIST */}
