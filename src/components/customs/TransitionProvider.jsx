@@ -33,7 +33,7 @@ const TransitionProvider = ({ children }) => {
                     exit={{ visibility: 'hidden' }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
                 >
-                    {titlePath.find(item => item.id === pathName).name}
+                    {titlePath.find(item => item.id === pathName)?.name}
                 </motion.div>
                 <motion.div
                     className='h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30'

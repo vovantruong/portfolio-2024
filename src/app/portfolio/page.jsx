@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import TextAnimate from '@/components/customs/TextAnimate'
@@ -45,7 +45,7 @@ const PortfolioPage = () => {
     const [visible, setVisible] = useState(true)
 
     const ref = useRef()
-    const { scrollYProgress } = useScroll({ target: ref })
+    // const { scrollYProgress } = useScroll({ target: ref })
     // const x = useTransform(scrollYProgress, [0, 1], ["0%", "-67%"]) // option in data
 
 
