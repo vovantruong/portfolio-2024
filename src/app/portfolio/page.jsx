@@ -108,7 +108,7 @@ const PortfolioPage = () => {
                                 <h2 className='font-bold text-2xl md:text-4xl lg:text-6xl'>{item.title}</h2>
                                 <div className='flex md:flex-row flex-col'>
                                     <div className='relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] shadow-md rounded-md overflow-hidden'>
-                                        <Image src={item.image} alt={item.title} width={1200} height={800} className='w-full h-full' />
+                                        <Image src={item.image} alt={item.title} width={1200} height={800} className='w-full h-full' priority />
                                     </div>
                                     <div className='flex-1 md:pl-10 md:mt-0 mt-10'>
                                         <p className='lg:text-lg'>{item.desc}</p>

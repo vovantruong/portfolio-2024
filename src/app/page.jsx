@@ -15,7 +15,7 @@ const Homepage = () => {
         >
             <div className='h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl overflow-hidden'>
                 <div className='h-[40%] lg:h-full lg:w-1/2 relative drop-shadow-lg'>
-                    <Image src={Avatar} alt='hero' fill className='object-contain' />
+                    <Image src={Avatar} alt='hero' fill className='object-contain' priority />
                 </div>
                 <div className='h-[60%] lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center'>
                     <h1 className='text-[32px] leading-[1.2] md:text-5xl font-extrabold'>
