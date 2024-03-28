@@ -88,21 +88,21 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className='hidden md:flex gap-4 items-center w-1/3 justify-center'>
-                <Link href="https://github.com/vovantruong" target='_blank'>
+                <a href="https://github.com/vovantruong" target='_blank'>
                     <Image src="/github.png" alt='github' width={24} height={24} />
-                </Link>
-                <Link href="https://www.instagram.com/_truong.vo.1007_/" target='_blank'>
+                </a>
+                <a href="https://www.instagram.com/_truong.vo.1007_/" target='_blank'>
                     <Image src="/instagram.png" alt='ins' width={24} height={24} />
-                </Link>
-                <Link href="https://www.facebook.com/vvtruong.1007" target='_blank'>
+                </a>
+                <a href="https://www.facebook.com/vvtruong.1007" target='_blank'>
                     <Image src="/facebook.png" alt='facebook' width={24} height={24} />
-                </Link>
-                <Link href="www.linkedin.com/in/vo-van-truong-gavin-dev" target='_blank'>
+                </a>
+                <a href="www.linkedin.com/in/vo-van-truong-gavin-dev" target='_blank'>
                     <Image src="/linkedin.png" alt='linkedin' width={24} height={24} />
-                </Link>
-                <Link href="https://t.me/gavinvo" target='_blank'>
+                </a>
+                <a href="https://t.me/gavinvo" target='_blank'>
                     <Image src="/telegram.png" alt='linkedin' width={24} height={24} />
-                </Link>
+                </a>
             </div>
             {/* RESPOSIVE MEU */}
             <div className='md:hidden'>
