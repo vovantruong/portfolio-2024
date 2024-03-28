@@ -18,7 +18,7 @@ const Homepage = () => {
                 </div>
                 <div className='h-[60%] lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center'>
                     <h1 className='text-[32px] leading-[1.2] md:text-5xl font-extrabold'>
-                        Hi, My name is Truong. I am a Frontend Developer.
+                        Hi, My name is Truong. {"I'm"} a Frontend Developer.
                     </h1>
 
                     <p className="text-base md:text-xl">I am a web programmer, with a passion for creating and building simple, beautiful websites in general and Frontend websites in particular, so I chose and pursued it to the end. This website was created to introduce a little about myself.</p>
